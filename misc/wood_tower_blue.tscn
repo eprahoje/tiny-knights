@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://1njbbt81463o"]
+
+[ext_resource type="Texture2D" uid="uid://dhelncf7gwmxp" path="res://addons/tiny swords/Factions/Goblins/Buildings/Wood_Tower/Wood_Tower_Blue.png" id="1_ad8g8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cw8pk"]
+size = Vector2(83, 62)
+
+[node name="WoodTowerBlue" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -65)
+texture = ExtResource("1_ad8g8")
+region_enabled = true
+region_rect = Rect2(832, 0, 128, 192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -26)
+shape = SubResource("RectangleShape2D_cw8pk")

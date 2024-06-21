@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd6dcw1k31tdh"]
+
+[ext_resource type="Texture2D" uid="uid://bcprf5a3qbwsb" path="res://addons/tiny swords/Factions/Goblins/Buildings/Wood_House/Goblin_House.png" id="1_se5c1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_djxr1"]
+radius = 37.3333
+
+[node name="GoblinHouse" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -61)
+texture = ExtResource("1_se5c1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -26)
+shape = SubResource("CircleShape2D_djxr1")

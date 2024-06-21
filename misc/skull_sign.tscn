@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://csd5aqvq2p3hj"]
+
+[ext_resource type="Texture2D" uid="uid://tgis50vkyjv5" path="res://addons/tiny swords/Deco/16.png" id="1_mma3e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ajspa"]
+size = Vector2(12, 43.1035)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xyluv"]
+size = Vector2(16.1798, 38.9711)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_60ghn"]
+radius = 6.0
+height = 56.0
+
+[node name="SkullSign" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -33)
+texture = ExtResource("1_mma3e")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-3.71052, -37.3243)
+rotation = 0.946915
+shape = SubResource("RectangleShape2D_ajspa")
+debug_color = Color(0.96602, 0, 0.483122, 0.42)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(2.85378, -35.3458)
+rotation = -0.811973
+shape = SubResource("RectangleShape2D_xyluv")
+debug_color = Color(0, 0.647143, 0.219061, 0.42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -28)
+shape = SubResource("CapsuleShape2D_60ghn")

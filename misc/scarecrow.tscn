@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf7fiht6jwjd7"]
+
+[ext_resource type="Texture2D" uid="uid://cqyt5ueiygvbq" path="res://addons/tiny swords/Deco/18.png" id="1_eptjl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qqe32"]
+radius = 26.0
+height = 74.0
+
+[node name="Scarecrow" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -60)
+texture = ExtResource("1_eptjl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -28)
+shape = SubResource("CapsuleShape2D_qqe32")
