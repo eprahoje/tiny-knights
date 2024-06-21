@@ -18,5 +18,9 @@ Ele está publicado na plataforma [Itch.io](https://itch.io/) de forma gratuita,
 
 ### 🔗 Link: https://eprahoje.itch.io/tiny-knights
 
+## Assets utilizados 💻
+* [Tiny Swords by Pixel Frog](https://pixelfrog-assets.itch.io/tiny-swords)
+* [Kenney Particle Pack](https://kenney.nl/assets/particle-pack)
+
 
 
